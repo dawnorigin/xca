@@ -17,6 +17,7 @@ const QList<int> digest::all_digests(
 #ifndef LIBRESSL_VERSION_NUMBER
 	  NID_sha3_224, NID_sha3_256, NID_sha3_384, NID_sha3_512,
 #endif
+	  NID_sm3,
 });
 
 int digest::default_md(NID_sha256);

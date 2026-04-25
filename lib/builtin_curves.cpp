@@ -146,7 +146,7 @@ builtin_curves::builtin_curves()
 		else if (other_curve_nids().contains(nid))
 			flag = CURVE_OTHER;
 		else
-			continue;
+			flag = CURVE_OTHER;
 
 		EC_GROUP *group = EC_GROUP_new_by_curve_name(nid);
 		EC_GROUP_get_order(group, order, NULL);

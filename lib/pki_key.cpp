@@ -406,7 +406,7 @@ QList<int> pki_key::possibleHashNids()
 			break;
 #ifndef OPENSSL_NO_EC
 		case EVP_PKEY_EC:
-			nids << NID_sha1;
+			nids << NID_sha1 << NID_sm3;
 			nids += allSha2 + allSha3;
 			break;
 #ifdef EVP_PKEY_ED25519
